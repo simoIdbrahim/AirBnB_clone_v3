@@ -1,0 +1,356 @@
+{
+    "State.deba84c9-4142-483c-a827-88bae575dacd": {
+        "id": "deba84c9-4142-483c-a827-88bae575dacd",
+        "created_at": "2024-02-03T23:48:17.192868",
+        "updated_at": "2024-02-03T23:48:17.192984",
+        "__class__": "State"
+    },
+    "State.81621bce-375b-4ebd-9b27-43eb44032d4c": {
+        "id": "81621bce-375b-4ebd-9b27-43eb44032d4c",
+        "created_at": "2024-02-03T23:48:20.232209",
+        "updated_at": "2024-02-03T23:48:20.232243",
+        "__class__": "State"
+    },
+    "State.604e1a18-e8ce-4cdb-8de3-a16dea6cc96a": {
+        "id": "604e1a18-e8ce-4cdb-8de3-a16dea6cc96a",
+        "created_at": "2024-02-03T23:48:22.661140",
+        "updated_at": "2024-02-03T23:48:22.661227",
+        "__class__": "State"
+    },
+    "City.a0880c69-a867-415b-80fe-1102ffaad967": {
+        "id": "a0880c69-a867-415b-80fe-1102ffaad967",
+        "created_at": "2024-02-03T23:50:02.106067",
+        "updated_at": "2024-02-03T23:50:02.106130",
+        "state_id": "deba84c9-4142-483c-a827-88bae575dacd",
+        "__class__": "City"
+    },
+    "City.d68eee26-6c2e-449c-85a7-e72f5b02b013": {
+        "id": "d68eee26-6c2e-449c-85a7-e72f5b02b013",
+        "created_at": "2024-02-03T23:50:04.812237",
+        "updated_at": "2024-02-03T23:50:04.812295",
+        "state_id": "81621bce-375b-4ebd-9b27-43eb44032d4c",
+        "__class__": "City"
+    },
+    "City.645a7ba9-97d2-480a-b656-5c368dd59919": {
+        "id": "645a7ba9-97d2-480a-b656-5c368dd59919",
+        "created_at": "2024-02-03T23:50:05.779330",
+        "updated_at": "2024-02-03T23:50:05.779392",
+        "state_id": "604e1a18-e8ce-4cdb-8de3-a16dea6cc96a",
+        "__class__": "City"
+    },
+    "City.9ab58d5c-eedc-4bc7-9038-56c5d8810c64": {
+        "id": "9ab58d5c-eedc-4bc7-9038-56c5d8810c64",
+        "created_at": "2024-02-03T23:50:06.722259",
+        "updated_at": "2024-02-03T23:50:06.722317",
+        "state_id": "deba84c9-4142-483c-a827-88bae575dacd",
+        "__class__": "City"
+    },
+    "City.4823d68b-ec43-438b-b911-996a12c6edc0": {
+        "id": "4823d68b-ec43-438b-b911-996a12c6edc0",
+        "created_at": "2024-02-03T23:50:07.637196",
+        "updated_at": "2024-02-03T23:50:07.637258",
+        "state_id": "81621bce-375b-4ebd-9b27-43eb44032d4c",
+        "__class__": "City"
+    },
+    "City.bad636d2-0d8c-4c12-acee-f67033d53429": {
+        "id": "bad636d2-0d8c-4c12-acee-f67033d53429",
+        "created_at": "2024-02-03T23:50:08.554957",
+        "updated_at": "2024-02-03T23:51:13.010852",
+        "name": "Agadir",
+        "state_id": "deba84c9-4142-483c-a827-88bae575dacd",
+        "__class__": "City"
+    },
+    "Place.a967a088-ef60-4b0e-a3e3-b9124f161446": {
+        "id": "a967a088-ef60-4b0e-a3e3-b9124f161446",
+        "created_at": "2024-02-03T23:52:47.184957",
+        "updated_at": "2024-02-03T23:52:47.185012",
+        "city_id": "a0880c69-a867-415b-80fe-1102ffaad967",
+        "__class__": "Place"
+    },
+    "Place.c725a721-eb7b-4a7c-a943-02e14eadbc22": {
+        "id": "c725a721-eb7b-4a7c-a943-02e14eadbc22",
+        "created_at": "2024-02-03T23:52:49.087213",
+        "updated_at": "2024-02-03T23:52:49.087266",
+        "city_id": "d68eee26-6c2e-449c-85a7-e72f5b02b013",
+        "__class__": "Place"
+    },
+    "Place.027b8116-701d-4fa6-b5e5-cce21c2fadd4": {
+        "id": "027b8116-701d-4fa6-b5e5-cce21c2fadd4",
+        "created_at": "2024-02-03T23:52:49.730308",
+        "updated_at": "2024-02-03T23:52:49.730370",
+        "city_id": "645a7ba9-97d2-480a-b656-5c368dd59919",
+        "__class__": "Place"
+    },
+    "Place.68fbcbbb-184f-4e55-8a10-473d3e14978c": {
+        "id": "68fbcbbb-184f-4e55-8a10-473d3e14978c",
+        "created_at": "2024-02-03T23:52:50.358712",
+        "updated_at": "2024-02-03T23:52:50.358772",
+        "city_id": "9ab58d5c-eedc-4bc7-9038-56c5d8810c64",
+        "__class__": "Place"
+    },
+    "Place.a07b5803-1ab7-4384-befc-0bffe4f9cd08": {
+        "id": "a07b5803-1ab7-4384-befc-0bffe4f9cd08",
+        "created_at": "2024-02-03T23:52:50.969924",
+        "updated_at": "2024-02-03T23:52:50.969982",
+        "city_id": "4823d68b-ec43-438b-b911-996a12c6edc0",
+        "__class__": "Place"
+    },
+    "Place.181ee7de-c754-4a56-ac41-2cfcc91580ad": {
+        "id": "181ee7de-c754-4a56-ac41-2cfcc91580ad",
+        "created_at": "2024-02-03T23:52:51.520861",
+        "updated_at": "2024-02-04T00:00:30.297921",
+        "city_id": "bad636d2-0d8c-4c12-acee-f67033d53429",
+        "user_id": "f14ca4db-b7f1-4c74-b007-b7dc55a4de66",
+        "__class__": "Place"
+    },
+    "User.f14ca4db-b7f1-4c74-b007-b7dc55a4de66": {
+        "id": "f14ca4db-b7f1-4c74-b007-b7dc55a4de66",
+        "created_at": "2024-02-03T23:59:53.040082",
+        "updated_at": "2024-02-03T23:59:53.040161",
+        "__class__": "User"
+    },
+    "User.a5d664b6-d6de-4400-b45d-ee1bb0b678ed": {
+        "id": "a5d664b6-d6de-4400-b45d-ee1bb0b678ed",
+        "created_at": "2024-02-03T23:59:54.106601",
+        "updated_at": "2024-02-03T23:59:54.106658",
+        "__class__": "User"
+    },
+    "User.10adda72-5416-4263-a037-004a777b8d22": {
+        "id": "10adda72-5416-4263-a037-004a777b8d22",
+        "created_at": "2024-02-03T23:59:55.183368",
+        "updated_at": "2024-02-03T23:59:55.183404",
+        "__class__": "User"
+    },
+    "Place.1e2e3f4g-5h6i-7j8k-9l0m-1n2o3p4q5r6s": {
+        "id": "1e2e3f4g-5h6i-7j8k-9l0m-1n2o3p4q5r6s",
+        "created_at": "2024-02-04T00:00:31.123456",
+        "updated_at": "2024-02-04T00:00:31.123456",
+        "city_id": "bad636d2-0d8c-4c12-acee-f67033d53429",
+        "user_id": "a5d664b6-d6de-4400-b45d-ee1bb0b678ed",
+        "__class__": "Place"
+    },
+    "Place.98984112-11ba-471d-a0ac-9bae6dc2358f": {
+        "user_id": "f14ca4db-b7f1-4c74-b007-b7dc55a4de66",
+        "name": "places",
+        "city_id": "bad636d2-0d8c-4c12-acee-f67033d53429",
+        "created_at": "2024-02-04T11:13:05.772777",
+        "updated_at": "2024-02-04T11:13:05.772934",
+        "id": "98984112-11ba-471d-a0ac-9bae6dc2358f",
+        "__class__": "Place"
+    },
+    "Place.c71672ef-0171-408b-a4ef-da6dc559f70a": {
+        "user_id": "f14ca4db-b7f1-4c74-b007-b7dc55a4de66",
+        "name": "places 2",
+        "city_id": "bad636d2-0d8c-4c12-acee-f67033d53429",
+        "created_at": "2024-02-04T11:13:13.553869",
+        "updated_at": "2024-02-04T11:13:13.553975",
+        "id": "c71672ef-0171-408b-a4ef-da6dc559f70a",
+        "__class__": "Place"
+    },
+    "Review.993f7942-cf83-49d8-986e-931906d7c298": {
+        "id": "993f7942-cf83-49d8-986e-931906d7c298",
+        "created_at": "2024-02-04T11:33:07.922446",
+        "updated_at": "2024-02-04T11:33:07.922513",
+        "__class__": "Review"
+    },
+    "Review.6dcaa2fd-fa91-4108-965a-411ec257906f": {
+        "id": "6dcaa2fd-fa91-4108-965a-411ec257906f",
+        "created_at": "2024-02-04T11:33:09.836004",
+        "updated_at": "2024-02-04T11:33:09.836038",
+        "__class__": "Review"
+    },
+    "Review.23d031d4-466c-4c90-81b9-2e691c4d2f78": {
+        "id": "23d031d4-466c-4c90-81b9-2e691c4d2f78",
+        "created_at": "2024-02-04T11:33:10.343280",
+        "updated_at": "2024-02-04T11:33:10.343341",
+        "__class__": "Review"
+    },
+    "Review.deb3c7be-45f7-4fbb-b4b5-119f3316131f": {
+        "user_id": "a5d664b6-d6de-4400-b45d-ee1bb0b678ed",
+        "text": "nosql very good thing",
+        "place_id": "98984112-11ba-471d-a0ac-9bae6dc2358f",
+        "created_at": "2024-02-04T11:53:30.777181",
+        "updated_at": "2024-02-04T11:53:30.777365",
+        "id": "deb3c7be-45f7-4fbb-b4b5-119f3316131f",
+        "__class__": "Review"
+    },
+    "Review.1a5fa060-5b96-41d0-ae93-c7a4ccac1d41": {
+        "user_id": "a5d664b6-d6de-4400-b45d-ee1bb0b678ed",
+        "text": "yes it is working",
+        "place_id": "98984112-11ba-471d-a0ac-9bae6dc2358f",
+        "created_at": "2024-02-04T11:53:47.042973",
+        "updated_at": "2024-02-04T12:04:10.028538",
+        "id": "1a5fa060-5b96-41d0-ae93-c7a4ccac1d41",
+        "__class__": "Review"
+    },
+    "State.4fd4f4b1-b7b7-4ec3-885f-af015c514000": {
+        "name": "California",
+        "created_at": "2024-02-04T14:42:50.837792",
+        "updated_at": "2024-02-04T14:42:50.837815",
+        "id": "4fd4f4b1-b7b7-4ec3-885f-af015c514000",
+        "__class__": "State"
+    },
+    "Amenity.5595266f-4ea6-4b31-963e-6db05521d01c": {
+        "id": "5595266f-4ea6-4b31-963e-6db05521d01c",
+        "created_at": "2024-02-04T15:49:22.106559",
+        "updated_at": "2024-02-04T15:49:22.106676",
+        "__class__": "Amenity"
+    },
+    "Amenity.0359ca50-2cf6-4a52-b900-a0c7df046496": {
+        "id": "0359ca50-2cf6-4a52-b900-a0c7df046496",
+        "created_at": "2024-02-04T15:49:22.647332",
+        "updated_at": "2024-02-04T15:49:22.647453",
+        "__class__": "Amenity"
+    },
+    "Amenity.6ba9a1ba-8e88-4a7e-a6ec-b03c70f0c964": {
+        "id": "6ba9a1ba-8e88-4a7e-a6ec-b03c70f0c964",
+        "created_at": "2024-02-04T15:49:23.146099",
+        "updated_at": "2024-02-04T15:49:23.146168",
+        "__class__": "Amenity"
+    },
+    "Amenity.e31aa64c-5806-4ded-8b6e-03d39f1677a3": {
+        "id": "e31aa64c-5806-4ded-8b6e-03d39f1677a3",
+        "created_at": "2024-02-04T15:49:23.563025",
+        "updated_at": "2024-02-04T15:49:23.563101",
+        "__class__": "Amenity"
+    },
+    "Place.83627209-f420-4750-96b5-2f5687767246": {
+        "id": "83627209-f420-4750-96b5-2f5687767246",
+        "created_at": "2024-02-05T00:53:49.384363",
+        "updated_at": "2024-02-05T00:53:49.384384",
+        "__class__": "Place"
+    },
+    "Place.847d86c1-31e9-492e-9d63-9646cafbbac2": {
+        "id": "847d86c1-31e9-492e-9d63-9646cafbbac2",
+        "created_at": "2024-02-05T00:53:50.776299",
+        "updated_at": "2024-02-05T00:53:50.776390",
+        "__class__": "Place"
+    },
+    "Place.155a471c-b965-42c7-aea6-7ccb2009a02f": {
+        "id": "155a471c-b965-42c7-aea6-7ccb2009a02f",
+        "created_at": "2024-02-05T00:53:52.218972",
+        "updated_at": "2024-02-05T00:53:52.219036",
+        "__class__": "Place"
+    },
+    "Place.21a7a8fd-8187-4a8e-9b09-809eb1a624ce": {
+        "id": "21a7a8fd-8187-4a8e-9b09-809eb1a624ce",
+        "created_at": "2024-02-05T00:53:53.290436",
+        "updated_at": "2024-02-05T00:53:53.290547",
+        "__class__": "Place"
+    },
+    "Place.ec670869-f085-49df-9151-2826e43d6d47": {
+        "id": "ec670869-f085-49df-9151-2826e43d6d47",
+        "created_at": "2024-02-05T01:05:46.040292",
+        "updated_at": "2024-02-05T01:05:46.040334",
+        "__class__": "Place"
+    },
+    "Place.62ec7db6-0547-4313-8ecc-ccf8d93711c4": {
+        "id": "62ec7db6-0547-4313-8ecc-ccf8d93711c4",
+        "created_at": "2024-02-05T01:05:48.026461",
+        "updated_at": "2024-02-05T01:05:48.026635",
+        "__class__": "Place"
+    },
+    "Review.db087808-2774-4df3-9e69-7ee6fc0abcf8": {
+        "id": "db087808-2774-4df3-9e69-7ee6fc0abcf8",
+        "created_at": "2024-02-05T01:37:14.608083",
+        "updated_at": "2024-02-05T01:37:14.608200",
+        "__class__": "Review"
+    },
+    "Review.e25251b7-a44d-46d7-b751-9075f17fea81": {
+        "id": "e25251b7-a44d-46d7-b751-9075f17fea81",
+        "created_at": "2024-02-05T01:37:15.413781",
+        "updated_at": "2024-02-05T01:37:15.413856",
+        "__class__": "Review"
+    },
+    "Review.e5cd6c3f-8954-4015-aa5b-09dba760cd0a": {
+        "id": "e5cd6c3f-8954-4015-aa5b-09dba760cd0a",
+        "created_at": "2024-02-05T01:37:15.871560",
+        "updated_at": "2024-02-05T01:37:15.871650",
+        "__class__": "Review"
+    },
+    "Review.3f67f5bf-e72b-48da-a96c-22070f0ea6a8": {
+        "id": "3f67f5bf-e72b-48da-a96c-22070f0ea6a8",
+        "created_at": "2024-02-05T01:37:16.445768",
+        "updated_at": "2024-02-05T01:37:16.445838",
+        "__class__": "Review"
+    },
+    "Review.ca5d0fa8-6de6-494f-810c-e2f4433392b4": {
+        "id": "ca5d0fa8-6de6-494f-810c-e2f4433392b4",
+        "created_at": "2024-02-05T01:37:16.879396",
+        "updated_at": "2024-02-05T01:37:16.879482",
+        "__class__": "Review"
+    },
+    "Amenity.07846c9c-08e2-49c5-bedd-d3d65dc72a9f": {
+        "id": "07846c9c-08e2-49c5-bedd-d3d65dc72a9f",
+        "created_at": "2024-02-05T01:06:11.781457",
+        "updated_at": "2024-02-05T01:06:11.781672",
+        "__class__": "Amenity"
+    },
+    "Place.5bd38b8e-f59a-4b64-a912-37350999d330": {
+        "id": "5bd38b8e-f59a-4b64-a912-37350999d330",
+        "created_at": "2024-02-05T01:05:47.360319",
+        "updated_at": "2024-02-05T01:05:47.360410",
+        "amenity_ids": [
+            "07846c9c-08e2-49c5-bedd-d3d65dc72a9f",
+            "8955dafd-f8e1-43cf-9214-125ccd6d702c"
+        ],
+        "__class__": "Place"
+    },
+    "Amenity.111111-08e2-49c5-bedd-d3d65dc72a9f": {
+        "id": "111111-08e2-49c5-bedd-d3d65dc72a9f",
+        "created_at": "2024-02-05T01:06:11.781457",
+        "updated_at": "2024-02-05T01:06:11.781672",
+        "__class__": "Amenity"
+    },
+    "Amenity.8955dafd-f8e1-43cf-9214-125ccd6d702c": {
+        "id": "8955dafd-f8e1-43cf-9214-125ccd6d702c",
+        "created_at": "2024-02-05T10:28:20.790384",
+        "updated_at": "2024-02-05T10:28:20.790425",
+        "__class__": "Amenity"
+    },
+    "Amenity.9ce43e13-1f7a-4a91-b5b1-00f2482c5afa": {
+        "id": "9ce43e13-1f7a-4a91-b5b1-00f2482c5afa",
+        "created_at": "2024-02-05T10:40:26.906652",
+        "updated_at": "2024-02-05T10:40:26.906686",
+        "__class__": "Amenity"
+    },
+    "Amenity.dd0e5670-51ee-4db7-b31b-bdc535f27d75": {
+        "id": "dd0e5670-51ee-4db7-b31b-bdc535f27d75",
+        "created_at": "2024-02-05T10:40:30.940369",
+        "updated_at": "2024-02-05T10:40:30.940418",
+        "__class__": "Amenity"
+    },
+    "Amenity.b9e8d83f-ee51-4955-a442-400b601691c9": {
+        "id": "b9e8d83f-ee51-4955-a442-400b601691c9",
+        "created_at": "2024-02-05T10:40:31.514347",
+        "updated_at": "2024-02-05T10:40:31.514394",
+        "__class__": "Amenity"
+    },
+    "City.d720de44-a2b0-438a-ae40-cfb684a281c0": {
+        "id": "d720de44-a2b0-438a-ae40-cfb684a281c0",
+        "created_at": "2024-02-05T10:40:52.838916",
+        "updated_at": "2024-02-05T10:40:52.839003",
+        "__class__": "City"
+    },
+    "Place.ad139f64-7695-4a08-844f-2f504863c97a": {
+        "city_id": "0001",
+        "user_id": "0001",
+        "name": "My little house",
+        "number_rooms": 4,
+        "number_bathrooms": 2,
+        "max_guest": 10,
+        "price_by_night": 300,
+        "latitude": 37.773972,
+        "longitude": -122.431297,
+        "created_at": "2024-02-05T11:33:40.211744",
+        "updated_at": "2024-02-05T11:33:40.213283",
+        "id": "ad139f64-7695-4a08-844f-2f504863c97a",
+        "__class__": "Place"
+    },
+    "Place.b7435b48-1f33-4b21-99b3-8ceee4ae9e74": {
+        "id": "b7435b48-1f33-4b21-99b3-8ceee4ae9e74",
+        "created_at": "2024-02-05T11:39:33.532887",
+        "updated_at": "2024-02-05T11:39:33.532953",
+        "__class__": "Place"
+    }
+}

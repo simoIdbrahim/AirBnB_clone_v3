@@ -1,28 +1,42 @@
 #!/usr/bin/python3
-''' create a route '''
+"""App views for AirBnB_clone_v3
 
+Indexing app views
+"""
 
 from flask import jsonify
-from api.v1.views import app_views
 from models import storage
+from api.v1.views import app_views
 
 
-@app_views.route('/status', methods=['GET'])
-def api_status():
-    """ return res json """
-    res = {'status': 'OK'}
-    return jsonify(res)
+@app_views.route('/status')
+def status():
+    """
+    Returns the status of the API.
+
+    :return: A JSON object containing the status.
+    """
+    status = {"status": "OK"}
+    return jsonify(status)
 
 
-@app_views.route('/stats', methods=['GET'])
-def get_stats():
-    """ find num obj by type"""
-    stats = {
-        'amenities': storage.count('Amenity'),
-        'cities': storage.count('City'),
-        'places': storage.count('Place'),
-        'reviews': storage.count('Review'),
-        'states': storage.count('State'),
-        'users': storage.count('User')
-    }
-    return jsonify(stats)
+@app_views.route('/stats')
+def count():
+    """
+    Returns the number of each object by type.
+
+    Returns:
+        A JSON object containing the count of each object type.
+
+    """
+    alls = {}
+    classes = {"Amenity": "amenities",
+               "City": "cities",
+               "Place": "places",
+               "Review": "reviews",
+               "State": "states",
+               "User": "users"}
+    for classx in classes:
+        count = storage.count(classx)
+        alls[classes.get(classx)] = count
+    return jsonify(alls)

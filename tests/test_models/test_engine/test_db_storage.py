@@ -67,6 +67,29 @@ test_db_storage.py'])
             self.assertTrue(len(func[1].__doc__) >= 1,
                             "{:s} method needs a docstring".format(func[0]))
 
+    def test_get(self):
+        '''
+            Test if get method retrieves obj requested
+        '''
+        new_state = State(name="NewYork")
+        self.storage.new(new_state)
+        key = "State.{}".format(new_state.id)
+        result = self.storage.get("State", new_state.id)
+        self.assertTrue(result.id, new_state.id)
+        self.assertIsInstance(result, State)
+
+    def test_count(self):
+        '''
+            Test if count method returns expected number of objects
+        '''
+        old_count = self.storage.count("State")
+        new_state1 = State(name="NewYork")
+        self.storage.new(new_state1)
+        new_state2 = State(name="Virginia")
+        self.storage.new(new_state2)
+        new_state3 = State(name="California")
+        self.storage.new(new_state3)
+        self.assertEqual(old_count + 3, self.storage.count("State"))
 
 class TestFileStorage(unittest.TestCase):
     """Test the FileStorage class"""
@@ -86,26 +109,3 @@ class TestFileStorage(unittest.TestCase):
     @unittest.skipIf(models.storage_t != 'db', "not testing db storage")
     def test_save(self):
         """Test that save properly saves objects to file.json"""
-
-    def test_get(self):
-        """ test get method """
-        storage = db_storage.DBStorage()
-        dict = {"name": "Cundinamarca"}
-        instance = State(**dict)
-        storage.new(instance)
-        storage.save()
-        get_instance = storage.get(State, instance.id)
-        self.assertEqual(get_instance, instance)
-    
-    def test_count(self):
-        """ test count method """
-        storage = db_storage.DBStorage()
-        dict = {"name": "Vecindad"}
-        state = State(**dict)
-        storage.new(state)
-        dict = {"name": "Mexico", "state_id": state.id}
-        city = City(**dict)
-        storage.new(city)
-        storage.save()
-        count = storage.count()
-        self.assertEqual(len(storage.all()), count)

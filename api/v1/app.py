@@ -1,31 +1,35 @@
 #!/usr/bin/python3
-""" create app flask """
+"""
+This file is the main entry point
+for the AirBnB clone version 3 API.
+"""
 
-from os import getenv
-from flask import Flask, jsonify
-from models import storage
+
 from api.v1.views import app_views
+from os import getenv
+from models import storage
+from flask import Flask, make_response, jsonify
+from flask_cors import CORS
+from flask import jsonify
 
-app = Flask(__name__)
-
+app = Flask('__name__')
 app.register_blueprint(app_views)
-app.url_map.strict_slashes = False
-
-
-@app.teardown_appcontext
-def teardown_engine():
-    ''' Removes current SQLAlchemy Session '''
-    storage.close()
+CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
 
 
 @app.errorhandler(404)
-def not_found():
-    ''' return code status if page not found '''
-    res = {'error': 'Not found'}
-    return jsonify(res), 404
+def notFound(err):
+    """ handler error 404 """
+    return jsonify({"error": "Not found"}), 404
 
 
-if __name__ == '__main__':
-    HOST = getenv('HBNB_API_HOST', '0.0.0.0')
-    PORT = int(getenv('HBNB_API_PORT', 5000))
-    app.run(host=HOST, port=PORT, threaded=True)
+@app.teardown_appcontext
+def teardown_db(exception=None):
+    """ Close the database """
+    storage.close()
+
+
+if __name__ == "__main__":
+    HBNB_HOST = getenv("HBNB_API_HOST", "0.0.0.0")
+    HBNB_PORT = getenv("HBNB_API_PORT", 5000)
+    app.run(host=HBNB_HOST, port=HBNB_PORT, debug=True, threaded=True)
