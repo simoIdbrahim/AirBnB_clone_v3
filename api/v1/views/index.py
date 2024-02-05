@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""App views for AirBnB_clone_v3
-
-Indexing app views
-"""
+""" flask index page """
 
 from flask import jsonify
 from models import storage
@@ -11,24 +8,14 @@ from api.v1.views import app_views
 
 @app_views.route('/status')
 def status():
-    """
-    Returns the status of the API.
-
-    :return: A JSON object containing the status.
-    """
+    """ check app status its ok """
     status = {"status": "OK"}
     return jsonify(status)
 
 
 @app_views.route('/stats')
 def count():
-    """
-    Returns the number of each object by type.
-
-    Returns:
-        A JSON object containing the count of each object type.
-
-    """
+    """ added count() method from storage """
     alls = {}
     classes = {"Amenity": "amenities",
                "City": "cities",
@@ -36,7 +23,7 @@ def count():
                "Review": "reviews",
                "State": "states",
                "User": "users"}
-    for classx in classes:
-        count = storage.count(classx)
-        alls[classes.get(classx)] = count
+    for cls in classes:
+        count = storage.count(cls)
+        alls[classes.get(cls)] = count
     return jsonify(alls)
