@@ -1,29 +1,37 @@
 #!/usr/bin/python3
-""" flask index page """
+""" index page """
 
 from flask import jsonify
-from models import storage
 from api.v1.views import app_views
+from models.state import State
+from models.amenity import Amenity
+from models.city import City
+from models.place import Place
+from models.review import Review
+from models.user import User
+from models import storage
 
 
-@app_views.route('/status')
+@app_views.route("/status", methods=['GET'], strict_slashes=False)
 def status():
-    """ check app status its ok """
-    status = {"status": "OK"}
-    return jsonify(status)
+    """ file run ok"""
+    return jsonify({"status": "OK"})
 
 
-@app_views.route('/stats')
-def count():
-    """ added count() method from storage """
-    alls = {}
-    classes = {"Amenity": "amenities",
-               "City": "cities",
-               "Place": "places",
-               "Review": "reviews",
-               "State": "states",
-               "User": "users"}
-    for cls in classes:
-        count = storage.count(cls)
-        alls[classes.get(cls)] = count
-    return jsonify(alls)
+@app_views.route("/stats", methods=['GET'], strict_slashes=False)
+def stats():
+    """ count of all obj"""
+    amenities = storage.count(Amenity)
+    cities = storage.count(City)
+    places = storage.count(Place)
+    reviews = storage.count(Review)
+    states = storage.count(State)
+    users = storage.count(User)
+    return {
+        "amenities": amenities,
+        "cities": cities,
+        "places": places,
+        "reviews": reviews,
+        "states": states,
+        "users": users
+    }
